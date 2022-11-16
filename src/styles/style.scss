@@ -60,3 +60,97 @@
 .header__nav-link_active {
     color: #262626;
 }
+
+// main
+
+.main-page__about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-page__about-me {
+    max-width: 808px;
+    padding: 35px;
+    border-radius: 10px;
+    background: radial-gradient(55.45% 182.8% at 89.91% 93.26%, rgba(0, 255, 149, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #F1F1F1;
+
+    h1 {
+        max-width: 567px;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 56px;
+    }
+    p {
+        max-width: 718px;
+        margin-top: 25px;
+        font-size: 18px;
+        line-height: 137.69%;
+    }
+}
+
+.main-page__photo {
+    width: 572px;
+    background-color: #262626;
+    border-radius: 10px;
+    position: relative;
+
+    img {
+        position: absolute;
+        left: 40px;
+        bottom: -2px;
+    }
+}
+
+// social-buttons 
+
+.contact-btns {
+    display: flex;
+    gap: 25px;
+}
+
+.contact-btn {
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    background-color: #262626;
+    border-radius: 40px;
+}
+
+.social-btns {
+    display: flex;
+    gap: 15px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #fff;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.social-btn-icon {
+    display: block;
+    width: 23px;
+    height: 23px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.social-btn-icon_github {
+    background-image: url(../assets/github.svg);
+}
+.social-btn-icon_telegram {
+    background-image: url(../assets/telegram.svg);
+}
+.social-btn-icon_codewars {
+    background-image: url(../assets/codewars.svg);
+}
+.social-btn-icon_discord {
+    background-image: url(../assets/discord.svg);
+}
