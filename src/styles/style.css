@@ -1,1 +1,57 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;500&display=swap");
+* {
+  font-family: Roboto;
+  color: #262626;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: Lato;
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 22px;
+}
+.header__logo::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-color: #E6BE63;
+  border-radius: 50%;
+}
+
+.header__nav ul {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.header__nav-link {
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.header__nav-link_active {
+  color: #262626;
+}/*# sourceMappingURL=style.css.map */
