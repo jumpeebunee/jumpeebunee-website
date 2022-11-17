@@ -1,8 +1,11 @@
 import React from 'react'
 import ContactButtons from '../components/ContactButtons';
 import mainImage from "../assets/egor-image.png";
+import data from '../data/data';
+import PortfolioList from '../components/PortfolioList';
 
 const HomePage = () => {
+
   return (
     <main>
         <div className='container'>
@@ -13,9 +16,10 @@ const HomePage = () => {
                     <ContactButtons style={{marginTop: '95px'}}/>
                 </div>
                 <div className='main-page__photo'>
-                    <img src={mainImage}/>
+                    <img alt="junior frontend developer" src={mainImage}/>
                 </div>
             </div>
+            <PortfolioList items={data}/>
         </div>
     </main>
   );

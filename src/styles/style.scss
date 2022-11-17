@@ -56,7 +56,6 @@
     color: rgba(0, 0, 0, 0.7);
 }
 
-
 .header__nav-link_active {
     color: #262626;
 }
@@ -65,11 +64,14 @@
 
 .main-page__about {
     display: flex;
+    gap: 20px;
     justify-content: space-between;
 }
 
 .main-page__about-me {
+    width: 100%;
     max-width: 808px;
+    flex-shrink: 0;
     padding: 35px;
     border-radius: 10px;
     background: radial-gradient(55.45% 182.8% at 89.91% 93.26%, rgba(0, 255, 149, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #F1F1F1;
@@ -89,7 +91,7 @@
 }
 
 .main-page__photo {
-    width: 572px;
+    width: 100%;
     background-color: #262626;
     border-radius: 10px;
     position: relative;
@@ -154,9 +156,7 @@
     height: 23px;
     background-repeat: no-repeat;
     background-position: center center;
-    transition: all .4s ease-in
-    
-    ;
+    transition: all .4s ease-in;
 }
 
 .social-btn-icon_github {
@@ -170,4 +170,85 @@
 }
 .social-btn-icon_discord {
     background-image: url(../assets/discord.svg);
+}
+.social-btn-icon_deploy {
+    background-image: url(../assets/deploy.svg);
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.portfolio-item {
+    width: 100%;
+    max-width: 690px;
+    height: 489px;
+    padding: 35px 35px 50px 35px;
+    border-radius: 10px;
+}
+
+.portfolio-item__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-item__about {
+    display: flex;
+    align-items: center;
+
+    h2 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+
+    span {
+        display: block;
+        margin: 0 15px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        li {
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.portfolio-item__about-description {
+    margin-top: 9px;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.portfolio-item__btns {
+    display: flex;
+    gap: 10px;
+}
+
+.portfolio-item__image-content {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-item__content-image {
+    width: 559px;
+    height: 316px;
+    margin-top: 35px;
+    border-radius: 10px;
+    text-align: center;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
 }
