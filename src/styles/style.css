@@ -104,6 +104,13 @@
   color: #fff;
   background-color: #262626;
   border-radius: 40px;
+  border: 1px solid transparent;
+  transition: all 0.4s ease;
+}
+.contact-btn:hover {
+  color: #262626;
+  background-color: transparent;
+  border: 1px solid #262626;
 }
 
 .social-btns {
@@ -122,6 +129,9 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+.social-btn:hover .social-btn-icon_github {
+  background-image: url(../assets/github-active.svg);
+}
 
 .social-btn-icon {
   display: block;
@@ -129,6 +139,7 @@
   height: 23px;
   background-repeat: no-repeat;
   background-position: center center;
+  transition: all 0.4s ease-in;
 }
 
 .social-btn-icon_github {
