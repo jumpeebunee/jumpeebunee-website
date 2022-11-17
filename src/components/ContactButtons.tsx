@@ -1,12 +1,8 @@
-import React, {FC} from 'react'
+import React from 'react'
 
-interface ContactButtonsMargin {
-    style: React.CSSProperties;
-}
-
-const ContactButtons: FC<ContactButtonsMargin> = ({style}) => {
+const ContactButtons = () => {
   return (
-    <div style={style} className='contact-btns'>
+    <div  className='contact-btns'>
         <button className='contact-btn'>Contact me</button>
         <div className='social-btns'>
             <button className='social-btn'><span className='social-btn-icon social-btn-icon_github'></span></button>

@@ -85,6 +85,7 @@
     p {
         max-width: 718px;
         margin-top: 25px;
+        margin-bottom: 95px;
         font-size: 18px;
         line-height: 137.69%;
     }
@@ -251,4 +252,34 @@
     border-radius: 10px;
     text-align: center;
     filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
+}
+
+.footer {
+    padding: 35px;
+
+    .footer__content {
+        padding: 35px;
+        background: radial-gradient(55.45% 182.8% at 89.91% 93.26%, rgba(0, 255, 149, 0.2) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(54.7% 78.82% at 91.58% 30.22%, rgba(237, 198, 102, 0.4) 0%, rgba(241, 241, 241, 0.4) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #F1F1F1;
+        border-radius: 10px;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    p {
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 137.69%;
+    }
+
+    a {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 70px;
+        font-size: 18px;
+        line-height: 137.69%;
+    }
 }

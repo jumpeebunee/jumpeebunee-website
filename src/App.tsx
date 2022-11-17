@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import AppRouter from './components/AppRouter'
+import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
     <BrowserRouter>
       <Navigation/>
       <AppRouter/>
+      <Footer/>
     </BrowserRouter>
   );
 };
