@@ -490,11 +490,13 @@
     .contact-btns {
         align-items: start;
         flex-direction: column-reverse;
+        gap: 0px;
     }
 
     .contact-btn {
         width: 100%;
         text-align: center;
+        margin-top: 25px;
     }
 
     .portfolio-item__btns {
@@ -610,8 +612,8 @@
         }
     }
 
-    .contact-btns {
-        gap: 6.25vw;
+    .contact-btn {
+        margin-top: 6.25vw;
     }
 
     .portfolio-item__about {

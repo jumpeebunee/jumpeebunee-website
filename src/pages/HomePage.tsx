@@ -8,7 +8,7 @@ const HomePage = () => {
 
   return (
     <main>
-        <div className='container'>
+        <div id='about' className='container'>
             <div className='main-page__about'>
                 <div className='main-page__about-me'>
                     <h1>Hey, I'm Egor, a junior  frontend developer with more pet-projects </h1>
