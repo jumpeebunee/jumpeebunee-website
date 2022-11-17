@@ -8,7 +8,7 @@ interface ListItems {
 
 const PortfolioList: FC<ListItems> = ({items}) => {
     return (
-        <ul className="portfolio-list">
+        <ul id="works" className="portfolio-list">
             {items.map(item => 
                 <PortfolioItem
                     item={item}

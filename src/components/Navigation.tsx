@@ -11,7 +11,7 @@ const Navigation = () => {
                     <li><a className='header__nav-link header__nav-link_active' href='#home'>Home</a></li>
                     <li><Link className='header__nav-link' to="about">About</Link></li>
                     <li><a className='header__nav-link' href='#works'>Works</a></li>
-                    <li><a className='header__nav-link' href='#contact'>Contact</a></li>
+                    <li><a className='header__nav-link' href='#footer'>Contact</a></li>
                 </ul>
             </nav>
         </div>

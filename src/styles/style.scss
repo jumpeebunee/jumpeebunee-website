@@ -3,6 +3,7 @@
 * {
     font-family: Roboto;
     color: #262626;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -98,8 +99,9 @@
     position: relative;
 
     img {
+        width: 573px;
+        height: 394px;
         position: absolute;
-        left: 40px;
         bottom: -2px;
     }
 }
@@ -143,10 +145,24 @@
     background-color: #fff;
     background-size: contain;
     background-repeat: no-repeat;
+    transition: all ease .4s;
     
     &:hover {
+        background-color: #262626;
         .social-btn-icon_github {
             background-image: url(../assets/github-active.svg);
+        }
+        .social-btn-icon_telegram {
+            background-image: url(../assets/telegram-active.svg);
+        }
+        .social-btn-icon_codewars {
+            background-image: url(../assets/codewars-active.svg);
+        }
+        .social-btn-icon_vk {
+            background-image: url(../assets/vk-active.svg);
+        }
+        .social-btn-icon_deploy {
+            background-image: url(../assets/deploy-active.svg);
         }
     }
 }
@@ -157,7 +173,7 @@
     height: 23px;
     background-repeat: no-repeat;
     background-position: center center;
-    transition: all .4s ease-in;
+    transition: all .2s ease-in;
 }
 
 .social-btn-icon_github {
@@ -169,8 +185,8 @@
 .social-btn-icon_codewars {
     background-image: url(../assets/codewars.svg);
 }
-.social-btn-icon_discord {
-    background-image: url(../assets/discord.svg);
+.social-btn-icon_vk {
+    background-image: url(../assets/vk.svg);
 }
 .social-btn-icon_deploy {
     background-image: url(../assets/deploy.svg);
@@ -181,6 +197,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
+    gap: 20px;
 }
 
 .portfolio-item {
@@ -255,7 +272,7 @@
 }
 
 .footer {
-    padding: 35px;
+    padding: 35px 0px;
 
     .footer__content {
         padding: 35px;
@@ -274,12 +291,294 @@
         font-size: 18px;
         line-height: 137.69%;
     }
+}
 
-    a {
-        display: block;
-        margin-top: 15px;
-        margin-bottom: 70px;
-        font-size: 18px;
-        line-height: 137.69%;
+.footer__link {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 70px;
+    font-size: 18px;
+    line-height: 137.69%;
+}
+
+@media (max-width: 1248px) {
+    .portfolio-item__about {
+        flex-direction: column;
+        align-items: start;
+
+        span {
+            display: none;
+        }
+
+        ul {
+            margin-top: 5px;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1440px;
+        padding-left: 1.39vw;
+        padding-right: 1.39vw;
+    }
+
+    .main-page__about-me {
+        max-width: 56.11vw;
+        border-radius: 10px;
+    }
+    
+    .main-page__photo {
+        border-radius: 10px;
+    
+        img {
+            width: 39.79vw;
+            height: 27.36vw;
+            bottom: -0.14vw;
+        }
+    }
+    
+    .portfolio-item {
+        max-width: 47.91vw;
+        height: auto;
+
+        img {
+            max-width: 38.82vw;
+            height: 21.94vw;
+        }
+    }
+
+    .portfolio-list {
+        gap: 1.39vw;
+    }
+
+}
+
+@media (max-width: 880px) {
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main-page__about {
+        flex-direction: column-reverse;
+    }
+
+    .main-page__about-me {
+        max-width: 100%;
+    }
+
+    .main-page__photo {
+        height: 400px;
+    }
+
+    .main-page__photo {
+        height: 310px;
+        border-radius: 10px;
+    
+        img {
+            width: 434px;
+            height: 298px;
+            left: 10px;
+            bottom: -2px;
+        }
+    }
+
+    .portfolio-list {
+        gap: 20px;
+    }
+
+    .portfolio-item {
+        max-width: 100%;
+
+        img {
+            width: 100%;
+            max-width: 617px;
+            height: auto;
+        }
+    }
+}
+
+@media(max-width: 540px) {
+    .main-page__about-me {
+        h1 {
+            font-size: 8.89vw;
+            line-height: 10.37vw;
+        }
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .portfolio-list {
+        gap: 20px;
+    }
+
+    .main-page__photo {
+        img {
+            width: 80.37vw;
+            height: 55.19vw;
+            left: 1.85vw;
+            bottom: -0.37vw;
+        }
+    }
+    .contact-btns {
+        align-items: start;
+        flex-direction: column-reverse;
+    }
+
+    .contact-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .portfolio-item__btns {
+        margin-left: 10px;
+        flex-direction: column;
+    }
+
+    .footer__content {
+        h2 {
+            font-size: 8.89vw;
+            line-height: 10.37vw;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+
+    .container {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .header {
+        padding-top: 3.75vw;
+        padding-bottom: 3.75vw;
+    }
+
+    .main-page__about {
+        gap: 5vw;
+    }
+
+    .portfolio-list {
+        margin-top: 5vw;
+        gap: 5vw;
+    }
+
+    .footer {
+        padding-top: 8.75vw;
+        padding-bottom: 8.75vw;
+    }
+
+    .header__logo {
+        font-size: 4.50vw;
+        line-height: 5.50vw;
+
+        &::before {
+            width: 4vw;
+            height: 4vw;
+            margin-right: 2.50vw;
+        }
+    }
+
+    .main-page__about-me {
+        padding: 8.75vw;
+
+        p {
+            margin-top: 6.25vw;
+            margin-bottom: 23.75vw;
+            font-size: 4.50vw;
+        }
+    }
+
+    .main-page__photo {
+        height: 62.50vw;
+    }
+
+    .portfolio-item__content {
+        flex-direction: column-reverse;
+    }
+
+    .portfolio-item__btns {
+        flex-direction: row;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    .portfolio-item {
+        padding: 8.75vw 8.75vw 12.50vw 8.75vw;
+    }
+
+    .social-btn {
+        width: 11.25vw;
+        height: 11.25vw;
+
+        span {
+            width: 5.75vw;
+            height: 5.75vw;
+            background-size: contain;
+        }
+    }
+
+    .contact-btns {
+        gap: 6.25vw;
+    }
+
+    .portfolio-item__about {
+        ul {
+            gap: 2.50vw;
+
+            li {
+                font-size: 4vw;
+                line-height: 4.75vw;
+            }
+        }
+
+        h2 {
+            font-size: 6vw;
+            line-height: 7vw;
+        }
+    }
+
+    .portfolio-item__about-description {
+        margin-top: 2.25vw;
+        font-size: 4vw;
+        line-height: 4.75vw;
+    }
+
+    .contact-btn {
+        padding: 3vw 8.75vw;
+        font-size: 4.50vw;
+        line-height: 5.25vw;
+    }
+
+    .portfolio-item__content-image {
+        margin-top: 8.75vw;
+    }
+    
+    .footer {
+        .footer__content {
+            padding: 8.75vw;
+        }
+    }
+
+    .footer__content {
+        p {
+            margin-top: 3.75vw;
+            font-size: 4.50vw;
+        }
+    }
+
+    .footer__link {
+        margin-top: 3.75vw;
+        margin-bottom: 3.75vw;
+        font-size: 4.50vw;
+    }
+
+    .social-btns {
+        gap: 3.75vw;
     }
 }
