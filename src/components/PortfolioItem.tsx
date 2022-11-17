@@ -15,7 +15,7 @@ const PortfolioItem:FC<PortItemProps> = ({item}) => {
                         <span>-</span>
                         <ul>
                             {item.technologies.map(tech => 
-                                <li>{tech}</li>
+                                <li key={tech}>{tech}</li>
                             )}
                         </ul>
                     </div>
@@ -27,8 +27,7 @@ const PortfolioItem:FC<PortItemProps> = ({item}) => {
                 </div>
             </div>
             <div className="portfolio-item__image-content">
-                <a target="_blank" rel="noreferrer" href={item.deployLink}><img className="portfolio-item__content-image" alt={item.title} src={item.image}/></a>
-
+                <a target="_blank" rel="noreferrer" href={item.deployLink} className="portfolio-item__content-image-link"><img className="portfolio-item__content-image" alt={item.title} src={item.image}/></a>
             </div>
         </li>
     );

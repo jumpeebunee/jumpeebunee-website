@@ -11,6 +11,7 @@
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+  overflow: hidden;
 }
 
 .header {
@@ -55,6 +56,55 @@
 
 .header__nav-link_active {
   color: #262626;
+}
+
+.header__burger {
+  display: none;
+  width: 24px;
+  height: 16px;
+  transition: all ease 0.4s;
+  background-image: url(../assets/burger.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header__burger_open {
+  background-image: url(../assets/closeburger.svg);
+  background-position: center center;
+}
+
+#root {
+  overflow: hidden;
+  position: relative;
+}
+
+.header__nav_mobile {
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 52px;
+  right: 0;
+  padding: 20px;
+  bottom: 0;
+  z-index: 100;
+  transition: all ease 0.6s;
+  transform: translateX(100%);
+}
+
+.header__nav_mobile_active {
+  transform: none;
+}
+
+.body_active {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header__nav_mobile ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .main-page__about {
@@ -233,6 +283,13 @@
   color: #FFFFFF;
 }
 
+.portfolio-item__content-image-link {
+  transition: transform ease 0.4s;
+}
+.portfolio-item__content-image-link:hover {
+  transform: scale(1.02);
+}
+
 .portfolio-item__about-description {
   margin-top: 9px;
   font-size: 16px;
@@ -372,6 +429,9 @@
   .header__nav {
     display: none;
   }
+  .header__burger {
+    display: block;
+  }
   .portfolio-list {
     gap: 20px;
   }
@@ -404,8 +464,27 @@
     padding-right: 5vw;
   }
   .header {
+    height: 13vw;
     padding-top: 3.75vw;
     padding-bottom: 3.75vw;
+  }
+  .header__burger {
+    width: 6vw;
+    height: 4vw;
+  }
+  .header__burger_open {
+    width: 6vw;
+    height: 4vw;
+  }
+  .header__nav_mobile {
+    top: 13vw;
+  }
+  .header__nav_mobile ul {
+    gap: 7.25vw;
+  }
+  .header__nav_mobile a {
+    font-size: 4.5vw;
+    line-height: 5.5vw;
   }
   .main-page__about {
     gap: 5vw;

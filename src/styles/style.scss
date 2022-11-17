@@ -12,6 +12,7 @@
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+    overflow: hidden;
 }
 
 .header {
@@ -59,6 +60,57 @@
 
 .header__nav-link_active {
     color: #262626;
+}
+
+.header__burger {
+    display: none;
+    width: 24px;
+    height: 16px;
+    transition: all ease .4s;
+    background-image: url(../assets/burger.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header__burger_open {
+    background-image: url(../assets/closeburger.svg);
+    background-position: center center;
+}
+
+#root {
+    overflow: hidden;
+    position: relative;
+}
+
+.header__nav_mobile {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    top: 52px;
+    right: 0;
+    padding: 20px;
+    bottom: 0;
+    z-index: 100;
+    transition: all ease .6s;
+    transform: translateX(100%);
+}
+
+.header__nav_mobile_active {
+    transform: none;
+}
+
+.body_active {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header__nav_mobile {
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 // main
@@ -245,6 +297,13 @@
     }
 }
 
+.portfolio-item__content-image-link {
+    transition: transform ease .4s;
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
 .portfolio-item__about-description {
     margin-top: 9px;
     font-size: 16px;
@@ -412,6 +471,10 @@
         display: none;
     }
 
+    .header__burger {
+        display: block;
+    }
+
     .portfolio-list {
         gap: 20px;
     }
@@ -455,8 +518,32 @@
     }
 
     .header {
+        height: 13vw;
         padding-top: 3.75vw;
         padding-bottom: 3.75vw;
+    }
+
+    .header__burger {
+        width: 6vw;
+        height: 4vw;
+    }
+
+    .header__burger_open {
+        width: 6vw;
+        height: 4vw;
+    }
+
+    .header__nav_mobile {
+        top: 13vw;
+
+        ul {
+            gap: 7.25vw;
+        }
+
+        a {
+            font-size: 4.50vw;
+            line-height: 5.50vw;
+        }
     }
 
     .main-page__about {
